@@ -15,4 +15,5 @@
 	<type name="Magento\SalesMessageBus\Api\Sales\Data\OrderLineInterface">
 		<plugin disabled="false" name="MagentoEse_OmsOverrides_Plugin_Magento_SalesMessageBus_Api_Sales_Data_OrderLineInterface" sortOrder="10" type="MagentoEse\OmsOverrides\Plugin\Magento\SalesMessageBus\Api\Sales\Data\OrderLineInterface"/>
 	</type>
+	<preference for="Magento\CatalogMessageBus\Product\Mapper" type="MagentoEse\OmsOverrides\CatalogMessageBus\Product\Mapper"/>
 </config>
