@@ -1,0 +1,13 @@
+{
+    "name": "magentoese/module-omsoverrides",
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "MagentoEse\\OmsOverrides\\": ""
+        }
+    }
+}

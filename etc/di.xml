@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+	<type name="Magento\SalesMessageBus\Api\Logistics\Data\ItemInterface">
+		<plugin disabled="false" name="MagentoEse_OmsOverrides_Plugin_Magento_SalesMessageBus_Api_Logistics_Data_ItemInterface" sortOrder="10" type="MagentoEse\OmsOverrides\Plugin\Magento\SalesMessageBus\Api\Logistics\Data\ItemInterface"/>
+	</type>
+	<type name="Magento\SalesMessageBus\Model\Sales\OrderLine">
+		<plugin disabled="false" name="MagentoEse_OmsOverrides_Plugin_Magento_SalesMessageBus_Model_Sales_OrderLine" sortOrder="10" type="MagentoEse\OmsOverrides\Plugin\Magento\SalesMessageBus\Model\Sales\OrderLine"/>
+	</type>
+	<type name="Magento\SalesMessageBus\Model\Logistics\Item">
+		<plugin disabled="false" name="MagentoEse_OmsOverrides_Plugin_Magento_SalesMessageBus_Model_Logistics_Item" sortOrder="10" type="MagentoEse\OmsOverrides\Plugin\Magento\SalesMessageBus\Model\Logistics\Item"/>
+	</type>
+	<type name="Magento\SalesMessageBus\Order\Mapper\LineMapper">
+		<plugin disabled="false" name="MagentoEse_OmsOverrides_Plugin_Magento_SalesMessageBus_Order_Mapper_LineMapper" sortOrder="10" type="MagentoEse\OmsOverrides\Plugin\Magento\SalesMessageBus\Order\Mapper\LineMapper"/>
+	</type>
+	<type name="Magento\SalesMessageBus\Api\Sales\Data\OrderLineInterface">
+		<plugin disabled="false" name="MagentoEse_OmsOverrides_Plugin_Magento_SalesMessageBus_Api_Sales_Data_OrderLineInterface" sortOrder="10" type="MagentoEse\OmsOverrides\Plugin\Magento\SalesMessageBus\Api\Sales\Data\OrderLineInterface"/>
+	</type>
+</config>
