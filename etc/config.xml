@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../Magento/Store/etc/config.xsd">
+    <default>
+        <mcom_configuration>
+            <transport>
+                <driver>Service Bus (HTTP)</driver>
+            </transport>
+            <tax>
+                <vat_country>US</vat_country>
+            </tax>
+            <general>
+                <store_id>main_website_store</store_id>
+            </general>
+        </mcom_configuration>
+    </default>
+</config>
