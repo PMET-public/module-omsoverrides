@@ -26,12 +26,16 @@ class LineMapper
     {
         //This adds data from the MagentoEse_InStorePickup module to be used by OMS
         $order = $this->orderRepository->get($result->getId());
-        $storeName = $order->getInstorepickupStoreLocationName();
-        $storeId = $order->getInstorepickupStoreLocationId();
-        $storeCity =$order->getInstorepickupStoreLocationCity();
-        $storeState =$order->getInstorepickupStoreLocationState();
-        $storePostalCode=$order->getInstorepickupStoreLocationPostalCode();
-        $result->setPickupLocation($storeName);
+        try {
+            $storeName = $order->getInstorepickupStoreLocationName();
+            $storeId = 'Store_'.$order->getInstorepickupStoreLocationId();
+            $storeCity = $order->getInstorepickupStoreLocationCity();
+            $storeState = $order->getInstorepickupStoreLocationState();
+            $storePostalCode = $order->getInstorepickupStoreLocationPostalCode();
+            $result->setPickupLocation($storeId);
+        }catch (\Exception $e){
+            //do nothing
+        }
         //$result->setCustomAttribute('yupyup','ValueOfCustomAttribute');
         return $result;
     }
